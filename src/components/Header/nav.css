@@ -1,0 +1,13 @@
+.nav {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 2rem;
+  background-color: #fff;
+}
+.nav_logo {
+  width: 15rem;
+  object-fit: contain;
+}

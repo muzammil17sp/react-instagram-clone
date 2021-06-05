@@ -1,0 +1,20 @@
+.imageupload{
+width: 25rem;
+height: 20rem;
+margin-top: 2rem;
+border: 1px solid #ddd;
+padding: 2rem;
+
+}
+.imageupload .MuiFormControl-root {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+}
+.imageupload .MuiLinearProgress-root {
+    margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px){
+    .imageupload {
+        margin: 0 auto 0 auto;
+    }
+}

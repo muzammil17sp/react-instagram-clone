@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+
+import { firestore } from "./firebase";
+import Login from "./components/Login/Login";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import Nav from "./components/Header/Nav";
+import Home from "./components/Home/Home";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/login"  component={Login} />
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }

@@ -1,0 +1,47 @@
+.post{
+  max-width: 45rem;
+  border: 1px solid #ddd;
+  margin: 1rem 0 1rem 0;
+}
+.post_header{
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  background-color: #fff;
+  
+}
+.post_username{
+margin-left: 1rem;
+font-size: 2rem;
+font-weight: normal;
+}
+.post_image{
+  width: 100%;
+  object-fit: contain;
+  border: 1px solid #ddd;
+}
+.post_caption{
+  font-size: 1.3rem;
+  padding-left: 0.5rem;
+}
+
+
+.comment{
+  text-align: left;
+  padding: 0.5rem;
+
+}
+.comment strong {
+  font-size: 1rem;
+}
+.comment_form {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width:768px){
+  .post{
+    margin:  1rem auto 1rem auto;
+  }
+}
